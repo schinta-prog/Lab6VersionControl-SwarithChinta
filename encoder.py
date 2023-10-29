@@ -4,8 +4,15 @@
 def encode(number):
     en = ""
     for i in number:
-        p = int(i) + 3
-        en = en + str(p)
+        if 0 <= int(i) < 7:
+            p = int(i) + 3
+            en = en + str(p)
+        if int(i) == 7:
+            en = en + "0"
+        if int(i) == 8:
+            en = en + "1"
+        if int(i) == 9:
+            en = en + "2"
     return en
 
 #Main Loop

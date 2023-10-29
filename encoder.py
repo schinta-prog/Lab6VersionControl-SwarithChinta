@@ -1,4 +1,4 @@
-#Lab 6 Version Control Encoder by Swartith Chinta
+#Lab 6 Version Control Encoder by Swarith Chinta
 
 #Encode program
 def encode(number):
@@ -30,4 +30,4 @@ Please enter an option: """))
         num = input("Please enter your password to encode: ")
         y = encode(num)
         print("Your password has been encoded and stored!")
-        print()
+        print(y)

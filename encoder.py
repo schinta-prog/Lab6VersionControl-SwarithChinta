@@ -15,6 +15,27 @@ def encode(number):
             en = en + "2"
     return en
 
+
+# Decoder - Luke Barcenas
+def decode(encoded_pass):
+    encoded_pass = str(encoded_pass)
+    decoded_pass = []
+    # subtract 3 by each number. if the number is less than
+    # zero, change accordingly
+    for i in range(len(encoded_pass)):
+        temp_char = int(encoded_pass[i]) - 3
+        if temp_char == -1:
+            decoded_pass.append("9")
+        elif temp_char == -2:
+            decoded_pass.append("8")
+        elif temp_char == -3:
+            decoded_pass.append("7")
+        else:
+            decoded_pass.append(str(temp_char))
+    decoded_pass = "".join([str(i) for i in decoded_pass])
+    return decoded_pass
+
+
 #Main Loop
 while True:
     x = int(input(

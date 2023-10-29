@@ -51,4 +51,9 @@ Please enter an option: """))
         num = input("Please enter your password to encode: ")
         y = encode(num)
         print("Your password has been encoded and stored!")
-        print(y)
+
+    elif x == 2:
+        print(f"The encoded password is {y}, and the original password is {decode(y)}.")
+
+    elif x == 3:
+        break
